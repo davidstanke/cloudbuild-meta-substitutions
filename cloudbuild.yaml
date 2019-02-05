@@ -1,0 +1,10 @@
+steps:
+- name: 'ubuntu'
+  entrypoint: '/bin/bash'
+  args:
+  - '-c'
+  - |
+    echo built-in: $PROJECT_ID
+    echo custom: $_PROJECT
+substitutions:
+  _PROJECT: $PROJECT_ID
